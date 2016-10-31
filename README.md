@@ -84,7 +84,7 @@
 ## 与其它关键词抽取工具结果对比
 我们与其它常见的关键词抽取工具（[jieba](https://github.com/fxsjy/jieba)）进行对比，采用了两篇新闻作为抽取文本，抽取的结果对比如下：
 
-1.测试文本[test1.txt](https://github.com/thunlp/THUCKE/test1.txt)
+1.测试文本[test1.txt](https://github.com/thunlp/THUCKE/blob/master/test1.txt)
 
 |THUCKE|评分（最高1000）|jieba-TFIDF|评分（最高1）|jieba-TextRank|评分（最高1）
 |:------------|:-------------|:-------------|:------------|:-------------|:-------------|
@@ -99,7 +99,7 @@
 |电波|217|健康|0.0743|人体|0.3186|
 |研究|202|传送|0.0722|问题|0.2980|
 
-2.测试文本[test2.txt](https://github.com/thunlp/THUCKE/test2.txt)
+2.测试文本[test2.txt](https://github.com/thunlp/THUCKE/blob/master/test2.txt)
 
 |THUCKE|评分（最高1000）|jieba-TFIDF|评分（最高1）|jieba-TextRank|评分（最高1）
 |:------------|:-------------|:-------------|:------------|:-------------|:-------------|
