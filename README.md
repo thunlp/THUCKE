@@ -25,8 +25,8 @@
   将模型下载并解压到./res/，解压后目录结构应为：
 
     - res
-      - thucke
-      - thulac
+      - thucke_models
+      - thulac_models
 
 ### 2.参数介绍：
 |参数|解析| 
