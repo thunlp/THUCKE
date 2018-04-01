@@ -82,10 +82,11 @@ bool keyword::loadModel(std::string modelPath) {
     while (model >> first >> second >> probability) {
         flag = 1;
         if (!first || !second) continue;
-        if (first > maxBookwordsId) continue;
-        if (second > maxBooktagsId) continue;
+        if (first > maxBooktagsId) continue;
+        if (second > maxBookwordsId) continue;
         probabilityTable[std::make_pair(first, second)] = probability;
     }
+    //printf("length of pro_forward: %d\n", probabilityTable.size());
     if (!flag) return 0;
     model.close();
 
@@ -100,6 +101,7 @@ bool keyword::loadModel(std::string modelPath) {
         if (second > maxBooktagsId) continue;
         inverseTable[std::make_pair(first, second)] = probability;
     }
+    //printf("length of pro_backward: %d\n", inverseTable.size());
     if (!flag) return 0;
     model.close();
 
@@ -107,6 +109,7 @@ bool keyword::loadModel(std::string modelPath) {
     model.open((modelPath + "wordlex").c_str(), std::ifstream::in);
     if (!model.is_open()) return false;
     model >> lexiconNumDocs;
+    //printf("number of docs: %d\n", lexiconNumDocs);
     std::string line;
     flag = 0;
     while (model >> line) {

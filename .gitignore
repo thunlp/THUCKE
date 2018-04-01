@@ -27,3 +27,9 @@
 *.exe
 *.out
 *.app
+
+# Model File
+*res*
+
+# Executable file
+thucke
